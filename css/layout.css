@@ -1,0 +1,104 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 25px;
+}
+
+.container {
+	width: 50%;
+	margin: auto;
+}
+
+.frame {
+	width: 100%;
+	height: 200px;
+	background: url(../imgs/guess-img.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.gameInfo {
+	text-align: center;
+	padding: 30px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+#guess {
+	text-align: center;
+	width: 30%;
+	margin: auto;
+	padding: 10px 0;
+	font-size: 45px;
+}
+
+button {
+	width: 30%;
+	padding: 10px 0;
+	color: #fff;
+	font-size: 25px;
+	margin: auto;
+}
+
+#submitGuess {
+	background-color: #54d474;
+}
+
+#resetGame {
+	background-color: crimson;
+}
+
+.wrong {
+	color: crimson;
+}
+
+.right {
+	color: #54d474;
+}
+
+#guessList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+#guessListFlex {
+	width: 30%;
+	list-style-type: none;
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 15px;
+	}
+
+	.container {
+		width: 95%;
+	}
+
+	#guess {
+		width: 50%;
+	}
+
+	button {
+		width: 50%;
+	}
+
+	#guessListFlex {
+		width: 50%;
+	}
+}
