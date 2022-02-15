@@ -15,8 +15,8 @@ console.log(targetNumber);
 // Main Game Function
 function guess() {
 	if (!isGameOver) {
-		const myGuess = parseInt(inputValue);
 		const newListItem = document.createElement("li");
+		const myGuess = parseInt(inputValue);
 		newListItem.innerText = myGuess;
 		if (!isNaN(myGuess)) {
 			list.append(newListItem);
